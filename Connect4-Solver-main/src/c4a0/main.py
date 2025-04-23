@@ -13,6 +13,7 @@ import typer
 import math
 import random
 
+
 parent_dir = Path(__file__).resolve().parent.parent
 if str(parent_dir) not in sys.path:
     sys.path.insert(0, str(parent_dir))
@@ -30,6 +31,7 @@ from c4a0.utils import get_torch_device
 
 app = typer.Typer()
 
+app = FastAPI()
 
 # print(dir(c4a0_rust))  # Phải thấy predict_move, run_tui, play_games...
 
